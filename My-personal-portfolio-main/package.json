@@ -1,12 +1,15 @@
 {
   "name": "My-personal-portfolio-main",
   "version": "1.0.0",
-  "description": "A modern, responsive, multi-page personal portfolio built with **pure HTML, CSS, and JavaScript** (no frameworks).",
-  "main": "index.js",
+  "description": "Personal Portfolio",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "cors": "^...",
+    "dotenv": "^...",
+    "express": "^...",
+    "nodemailer": "^..."
+  }
 }
