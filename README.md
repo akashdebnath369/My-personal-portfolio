@@ -1,120 +1,56 @@
-# Akash Debnath - Personal Portfolio Website
+# Akash Debnath — Premium AI/ML Portfolio
 
-A modern, responsive, multi-page personal portfolio built with **pure HTML, CSS, and JavaScript** (no frameworks).
-
-## Folder Structure
-
-```
-portfolio/
-├── index.html              # Home page
-├── about.html              # About, skills, hobbies
-├── projects.html           # Project showcase
-├── certifications.html     # Experience & certifications
-├── contact.html            # Contact form & info
-├── css/
-│   └── style.css           # All styles
-├── js/
-│   └── script.js           # All JavaScript
-├── assets/
-│   ├── images/             # Profile & project images
-│   ├── icons/              # Icons (optional)
-│   └── resume/             # Resume PDF (optional)
-└── README.md
-```
-
-## How to Run
-
-1. Open the project folder on your computer.
-2. Double-click **`index.html`** to open it in your browser.
-3. Navigate between pages using the navbar.
-
-**Optional:** Use a local server for development:
-
-```bash
-# Python 3
-python -m http.server 8000
-
-# Then visit: http://localhost:8000
-```
+A premium single-page portfolio built with **HTML5, CSS3, and JavaScript** — optimized for GitHub Pages deployment.
 
 ## Features
 
-- Dark theme with glassmorphism UI
-- Purple/blue accents with cyan hover glow
-- Responsive design (mobile, tablet, desktop)
-- Sticky navbar with hamburger menu
-- Typing animation on home page
-- Particle background animation
-- Scroll fade-in animations
-- Skill progress bars
-- Contact form validation
-- Back-to-top button
+- Dark theme with indigo/purple/cyan gradients & glassmorphism
+- Animated neural network particle background
+- Typing animation, scroll reveals, parallax & cursor glow
+- All sections: Home, About, Education, Skills, Experience, Projects, Achievements, Certifications, GitHub, Resume, Contact
+- Live GitHub API integration with fallback data
+- Certificate modal viewer
+- Fully responsive & accessible
 
-## How to Customize
+## Structure
 
-### Profile Photo
-
-1. Add your image to `assets/images/profile.jpg`
-2. In `index.html`, replace the placeholder div with:
-
-```html
-<img src="assets/images/profile.jpg" alt="Akash Debnath" class="profile-placeholder" style="object-fit: cover;">
+```
+My-personal-portfolio/
+├── index.html          # Main single-page portfolio
+├── css/style.css       # All styles
+├── js/
+│   ├── data.js         # Portfolio content & GitHub fallback data
+│   └── script.js       # Animations, rendering, GitHub API
+├── assets/
+│   ├── images/         # Profile photo
+│   ├── certificates/   # Certificate images (optional)
+│   └── resume/         # Resume PDF (optional)
+└── .github/workflows/  # GitHub Pages deployment
 ```
 
-### Project Images
+## Local Development
 
-Replace `<div class="project-image">SS</div>` with:
+Open `index.html` in a browser, or use a local server:
 
-```html
-<img src="assets/images/suswastha.jpg" alt="SuSwastha" class="project-image" style="object-fit: cover; width: 100%;">
+```bash
+npx serve .
 ```
 
-### Colors
+## GitHub Pages Deployment
 
-Edit CSS variables at the top of `css/style.css`:
+1. Push to GitHub
+2. Go to **Settings → Pages**
+3. Source: **GitHub Actions** (workflow included in `.github/workflows/static.yml`)
 
-```css
-:root {
-  --accent-purple: #8b5cf6;
-  --accent-blue: #3b82f6;
-  --accent-cyan: #22d3ee;
-}
-```
+## Customization
 
-### Add a New Project
+- Edit content in `js/data.js`
+- Edit colors in CSS variables at the top of `css/style.css`
+- Add certificate images to `assets/certificates/`
+- Replace `assets/images/profile.jpg` with your photo
 
-Copy a project card block in `projects.html` and update title, description, badges, and GitHub link.
-
-### Google Map
-
-In `contact.html`, replace the map placeholder with an iframe from [Google Maps Embed](https://www.google.com/maps).
-
-### Contact Form (Real Emails)
-
-The form currently validates input only. To send emails, connect it to:
-- [Formspree](https://formspree.io)
-- [EmailJS](https://www.emailjs.com)
-- Your own backend API
-
-## Pages
-
-| Page | File | Description |
-|------|------|-------------|
-| Home | `index.html` | Hero, typing effect, quick highlights |
-| About | `about.html` | Bio, education, skills, hobbies |
-| Projects | `projects.html` | Project cards with GitHub links |
-| Experience | `certifications.html` | Timeline & certifications |
-| Contact | `contact.html` | Form, social links, map placeholder |
-
-## Author
-
-**Akash Debnath**  
-AI/ML Developer | B.Tech CSE, ICFAI University Tripura
+## Contact
 
 - GitHub: [akashdebnath369](https://github.com/akashdebnath369)
 - LinkedIn: [akash-debnath](https://www.linkedin.com/in/akash-debnath-226a82342)
 - Email: akashdebnath112234@gmail.com
-
-## License
-
-Free to use and modify for personal portfolio purposes.
